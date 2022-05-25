@@ -75,7 +75,63 @@
           <button class="order btn" type="button" data-modal-open>Заказать услугу</button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <p></p>
+              <b class="modal-fom-tittle">Оставьте свои данные, мы вам перезвоним</b>
+              <form class="modal-form">
+                <label class="field">
+                  <span class="form-label">Имя</span>
+                  <span class="label-group">
+                    <input type="text" name="name" value="" class="form-field" autofocus />
+                    <svg class="icon-modal-form" width="18px" height="18">
+                      <use href="./images/icons.svg#icon-form-user"></use>
+                    </svg>
+                  </span>
+                </label>
+
+                <label class="field">
+                  <span class="form-label">Телефон</span>
+                  <span class="label-group">
+                    <input type="tel" name="name" value="" class="form-field" autofocus />
+                    <svg class="icon-modal-form" width="18" height="18">
+                      <use href="./images/icons.svg#icon-form-phone"></use>
+                    </svg>
+                  </span>
+                </label>
+
+                <label class="field">
+                  <span class="form-label">Почта</span>
+                  <span class="label-group">
+                    <input type="email" name="name" value="" class="form-field" autofocus />
+                    <svg class="icon-modal-form" width="18" height="18">
+                      <use href="./images/icons.svg#icon-form-mail"></use>
+                    </svg>
+                  </span>
+                </label>
+
+                <label class="field">
+                  <span class="form-label">Комментарий</span>
+                  <textarea
+                    name="comment"
+                    rows="6"
+                    class="comment-form"
+                    placeholder="Введите текст..."
+                  ></textarea>
+                </label>
+
+                <label class="agreement">
+                  <input
+                    type="checkbox"
+                    name="check-agreement"
+                    class="agreement-checkbox visually-hidden"
+                  />
+                  <span class="custom-check-box"></span>
+                  <span class="form-label"
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a class="condition" href="/">Условия договора</a>
+                  </span>
+                </label>
+
+                <button type="submit" class="submit-modal">Отправить</button>
+              </form>
               <button class="btn-modal-close" type="button" data-modal-close>
                 <svg class="icon-close-modal" width="18" height="18">
                   <use href="./images/icons.svg#icon-close-black"></use>
@@ -583,7 +639,7 @@
         </div>
 
         <div class="footer-socials">
-          <h3 class="footer-socials-caption">присоединяйтесь</h3>
+          <b class="footer-socials-caption">присоединяйтесь</b>
           <ul class="icons-footer-socials list">
             <li class="icon-footer-socials-item">
               <a
@@ -641,7 +697,7 @@
         </div>
 
         <div class="join-us">
-          <h3 class="footer-join-caption">Подпишитесь на рассылку</h3>
+          <b class="footer-join-caption">Подпишитесь на рассылку</b>
           <div class="footer-join-group">
             <label for="email">
               <input
