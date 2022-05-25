@@ -454,9 +454,23 @@ img {
   margin-right: 7px;
   transition: background-color var(--transition-duration) var(--transition-timing-function),
     background-image var(--transition-duration) var(--transition-timing-function);
+  order: -1;
 }
 
-.agreement-checkbox:checked + .custom-check-box {
+.form-label:hover ~ .custom-check-box {
+  border-color: var(--accent-color-background);
+}
+
+.custom-check-box:hover,
+.custom-check-box:focus {
+  border-color: var(--accent-color-background);
+}
+
+.agreement-checkbox:focus-within ~ .custom-check-box {
+  border-color: var(--accent-color-background);
+}
+
+.agreement-checkbox:checked ~ .custom-check-box {
   background-color: var(--accent-color-background);
   /* border-width: 0; */
   background-image: url('../images/resourceicon/icon-check.svg');
