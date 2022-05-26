@@ -466,11 +466,6 @@ img {
   border-color: var(--accent-color-background);
 }
 
-.agreement .form-labe {
-  display: inline-block;
-  width: auto;
-}
-
 .agreement-checkbox:focus-within ~ .custom-check-box {
   border-color: var(--accent-color-background);
 }
@@ -490,6 +485,8 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin: 0;
+  display: inline-block;
+  width: auto;
 }
 
 .condition {
