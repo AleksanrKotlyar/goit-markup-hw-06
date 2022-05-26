@@ -301,7 +301,7 @@ img {
   transform: translate(-50%, -50%) scale(1);
 
   width: 528px;
-  min-height: 581px;
+  height: 581px;
   padding: 40px;
 
   background-color: var(--main-bgc);
@@ -329,7 +329,6 @@ img {
 
 .modal-form {
   width: 448px;
-  margin-bottom: 20px;
 }
 
 .field {
@@ -421,6 +420,7 @@ img {
   display: flex;
   margin-bottom: 30px;
   align-items: center;
+  justify-content: center;
 }
 
 .submit-modal {
@@ -466,18 +466,21 @@ img {
   border-color: var(--accent-color-background);
 }
 
+.agreement .form-labe {
+  display: inline-block;
+  width: auto;
+}
+
 .agreement-checkbox:focus-within ~ .custom-check-box {
   border-color: var(--accent-color-background);
 }
 
 .agreement-checkbox:checked ~ .custom-check-box {
   background-color: var(--accent-color-background);
-  /* border-width: 0; */
   background-image: url('../images/resourceicon/icon-check.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  /* background-origin: border-box; */
   border-color: var(--accent-color-background);
 }
 
